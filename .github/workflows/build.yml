@@ -36,4 +36,4 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=sdm96org_spme_sonar_4351b504-7698-4f2f-8585-a04bbe104ab6 -Dsonar.projectName='spme_sonar'
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=sdm96org_spme_sonar_dd06d326-b84f-4ec1-80e9-bc4e463cc283 -Dsonar.projectName='spme_sonar'
