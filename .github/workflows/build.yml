@@ -1,4 +1,4 @@
-name: SonarQube Analyzer
+name: Build
 
 on:
   push:
@@ -36,4 +36,4 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=sdm96org_spme_sonar_dd06d326-b84f-4ec1-80e9-bc4e463cc283 -Dsonar.projectName='spme_sonar'
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=sdm96org_spme_sonar_a0bbce39-eec9-4d90-a00c-6907ac71fd0c -Dsonar.projectName='spme_sonar'
